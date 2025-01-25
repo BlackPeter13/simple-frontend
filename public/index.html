@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA Data Viewer</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">BCA Data Overview</h1>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search items..." aria-label="Search items">
+        </div>
+
+        <div class="loader" id="loader">Loading data...</div>
+
+        <div class="skeleton-grid" id="skeleton">
+            <!-- Skeleton items -->
+            <div class="skeleton-card" role="status" aria-live="polite"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </div>
+
+        <div class="error" id="error">
+            <p>Failed to load data.</p>
+            <button onclick="fetchData()" class="retry-button">Retry</button>
+        </div>
+
+        <div class="grid" id="grid" role="region" aria-live="polite"></div>
+
+        <div id="status" role="status" aria-live="polite" class="sr-only"></div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
