@@ -1,5 +1,3 @@
-markdown
-Copy
 
 # BCA Data Viewer
 
