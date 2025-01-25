@@ -37,8 +37,8 @@ Clone Repository
 bash
 Copy
 
-git clone https://github.com/your-username/foundation-v1-client.git
-cd foundation-v1-client
+git clone https://github.com/BlackPeter13/simple-frontend.git
+cd simple-frontend
 
 Install Dependencies
 bash
